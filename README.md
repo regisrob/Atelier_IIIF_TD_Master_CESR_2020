@@ -199,22 +199,22 @@ Instance Mirador 3 sur Biblissima (Mirador vide par défaut) : https://iiif.bibl
 
 ### Étapes de l'exercice
 
-1. **Importer au moins 2 ou 3 Manifests** de votre choix parmi ceux sélectionnés lors de l'exercice 1. A défaut, piocher dans la liste "Exemples d'URL de Manifestes IIIF" ci-dessus
+1. **Importer au moins 2 ou 3 Manifests** de votre choix parmi ceux sélectionnés lors de l'exercice précédent. A défaut, piocher dans la liste "Exemples d'URL de Manifestes IIIF" ci-dessus
 3. **Configurer un environnement multi-fenêtres :**
-	- expérimenter les deux types d'espaces d'espace de travail : "Elastique" et "Mosaïque"
-	- explorer les différents panneaux disponibles (informations, index, droits) et options de fenêtre (modes d'affichage)
+  - expérimenter les deux types d'espaces d'espace de travail : "Elastique" et "Mosaïque"
+  - explorer les différents panneaux disponibles (informations, index, droits) et options de fenêtre (modes d'affichage)
 4. **Modifier les réglages d'une image** (luminosité, contraste, saturation, rotation etc.)
 5. **Télécharger une image entière et un détail au sein d'une image** (région zoomée), en cliquant sur l'icône en forme de trois petits points verticaux au niveau d'une fenêtre
 6. **Importer d'autres ressources IIIF** dans votre espace de travail à partir des sites donnés en exemple (cf. *"Liste d'entrepôts IIIF"*) :
   - importer via l'URL d'un Manifest  : copier l'URL et la coller dans le champ `Ajouter une ressource` dans Mirador
   - importer par glisser-déposer ("drag and drop") :
-  	- d'une image de votre ordinateur (glisser l'image dans l'interface de Mirador)
-  	- d'un logo IIIF depuis l'un des sites suivants : Getty, NGA, Princeton Art Museum, Harvard Art Museums, Yale Center for British Art
+    - d'une image de votre ordinateur (glisser l'image dans l'interface de Mirador)
+    - d'un logo IIIF depuis l'un des sites suivants : Getty, NGA, Princeton Art Museum, Harvard Art Museums, Yale Center for British Art
 7. **Importer/exporter une session Mirador** :
-	- dans la barre de menu principal (à gauche), cliquer sur l'icône avec les trois petits points horizontaux
-	- cliquer sur `Exporter l'espace de travail` puis `Copier`
-	- recharger la page, ou bien ouvrir un Mirador vide dans un nouvel onglet ou un autre navigateur
-	- cliquer sur `Importer un espace de travail` puis `Coller` et `Importer`
+  - dans la barre de menu principal (à gauche), cliquer sur l'icône avec les trois petits points horizontaux
+  - cliquer sur `Exporter l'espace de travail` puis `Copier`
+  - recharger la page, ou bien ouvrir un Mirador vide dans un nouvel onglet ou un autre navigateur
+  - cliquer sur `Importer un espace de travail` puis `Coller` et `Importer`
 	
 
 ------
@@ -315,8 +315,8 @@ Le IIIF Manifest Editor est un éditeur de Manifestes développées par Bodleian
 
 L'exemple donné est une sélection d'images représentant le *Groupe du Laocoon* (Musée Pio-Clementino, Vatican), issues de différentes collections (NGA, INHA, Bibliothèque Vaticane, Smithsonian, Bibliotheca Hertziana), et de différents types (manuscrit enluminé, estampe, sculpture, peinture, dessin, gemme) :
 
-- Ouvrir dans Mirador : https://iiif.biblissima.fr/mirador3/?iiif-content=https://jsonstorage.net/api/items/7ba0b03e-f171-44ef-a58e-2992145441db
-- Manifeste IIIF : https://jsonstorage.net/api/items/7ba0b03e-f171-44ef-a58e-2992145441db
+  - Ouvrir dans Mirador : https://iiif.biblissima.fr/mirador3/?iiif-content=https://jsonstorage.net/api/items/7ba0b03e-f171-44ef-a58e-2992145441db
+  - Manifeste IIIF : https://jsonstorage.net/api/items/7ba0b03e-f171-44ef-a58e-2992145441db
 
 ### Étapes de l'exercice
 
@@ -332,27 +332,26 @@ L'exemple donné est une sélection d'images représentant le *Groupe du Laocoon
 
 4. **Composer/éditer la séquence de votre Manifeste :**
 
-	- Une fois vos Manifestes chargés dans l'éditeur, vous pouvez glisser-déposer une à une les images de votre choix dans la partie inférieure (dans l'espace horizontal blanc avec l'indication `+ Add Canvas`) :
-		- en survolant la partie inférieure d'une image, un bandeau avec une ou plusieurs vignettes devrait apparaître.
+  - Une fois vos Manifestes chargés dans l'éditeur, vous pouvez glisser-déposer une à une les images de votre choix dans la partie inférieure (dans l'espace horizontal blanc avec l'indication `+ Add Canvas`) :
+	  - en survolant la partie inférieure d'une image, un bandeau avec une ou plusieurs vignettes devrait apparaître.
 		- glisser-déposer la vignette de votre choix sur la zone `+ Add Canvas`
 		- répéter l'opération pour chaque image que vous souhaitez incorporer à votre Manifeste.
-	- vous pouvez réordonner la séquence d'images en faisant glisser chaque *Canvas*, vous pouvez aussi dupliquer ou supprimer un *Canvas*
+  - vous pouvez réordonner la séquence d'images en faisant glisser chaque *Canvas*, vous pouvez aussi dupliquer ou supprimer un *Canvas*
 
 5. **Éditer les métadonnées de votre Manifeste :**
 
-	- Une fois votre sélection faite, cliquer sur `Return to Edit Manifest` dans le panneau de droite
-	- Dans ce même panneau latéral, vous pouvez :
-		- éditer les métadonnées associées à votre Manifeste dans la section `Manifest Metadata` : éditer les champs pré-existants du Manifeste d'origine, ou ajouter un nouveau champ en cliquant sur `Add metadata field`
-		- éditer les métadonnées associées à chaque Canvas dans la section `Canvas Metadata`
+  - Une fois votre sélection faite, cliquer sur `Return to Edit Manifest` dans le panneau de droite
+  - Dans ce même panneau latéral, vous pouvez :
+	  - éditer les métadonnées associées à votre Manifeste dans la section `Manifest Metadata` : éditer les champs pré-existants du Manifeste d'origine, ou ajouter un nouveau champ en cliquant sur `Add metadata field`
+    - éditer les métadonnées associées à chaque Canvas dans la section `Canvas Metadata`
 
 6. **Sauvegarder votre Manifeste :**
 
-	- Dans le panneau latéral, cliquer sur l'icône en forme de roue dentée en haut à droite de l'écran (paramètres). Une fenêtre `Server Endpoint Settings` s'affiche.
-- Cliquer sur le lien `click here to use JsonStorage.net ` dans le paragraphe de texte. Les 2 champs de formulaire situés en dessous se remplissent automatiquement. Cliquer ensuite sur `Save Settings`, puis `Close`.
-	- Cliquer sur le bouton `Save Manifest`, à partir de là vous pouvez :
-
-		- télécharger votre Manifeste (JSON) sur votre ordinateur, pour pouvoir ensuite le publier sur votre propre serveur (`Download manifest`)
-	- publier directement votre Manifeste sur le service en ligne *JsonStorage.net* : cela présente l'avantage de le rendre immédiatement accessible en ligne à travers une URL, mais sans garantie de pérennité. Après avoir cliqué sur `Store Manifets on Server`, un message de confirmation apparaît et l'URL de votre Manifeste est indiquée en dessous (sous la forme `https://jsonstorage.net/api/items/abc123...`).
+  - Dans le panneau latéral, cliquer sur l'icône en forme de roue dentée en haut à droite de l'écran (paramètres). Une fenêtre `Server Endpoint Settings` s'affiche.
+  - Cliquer sur le lien `click here to use JsonStorage.net ` dans le paragraphe de texte. Les 2 champs de formulaire situés en dessous se remplissent automatiquement. Cliquer ensuite sur `Save Settings`, puis `Close`.
+  - Cliquer sur le bouton `Save Manifest`, à partir de là vous pouvez :
+	  - télécharger votre Manifeste (JSON) sur votre ordinateur, pour pouvoir ensuite le publier sur votre propre serveur (`Download manifest`)
+  - publier directement votre Manifeste sur le service en ligne *JsonStorage.net* : cela présente l'avantage de le rendre immédiatement accessible en ligne à travers une URL, mais sans garantie de pérennité. Après avoir cliqué sur `Store Manifets on Server`, un message de confirmation apparaît et l'URL de votre Manifeste est indiquée en dessous (sous la forme `https://jsonstorage.net/api/items/abc123...`).
 
 ------
 
@@ -360,16 +359,16 @@ L'exemple donné est une sélection d'images représentant le *Groupe du Laocoon
 
 ### Installation et configuration de Biiif
 
-- Ouvrir un terminal et entrer les commandes suivantes :
+  - Ouvrir un terminal et entrer les commandes suivantes :
 
 ```shell
 $ git clone https://github.com/edsilv/biiif.git
 $ cd biiif
 ```
 
-- Ouvrir le dossier `biiif` dans votre éditeur de code.
+  - Ouvrir le dossier `biiif` dans votre éditeur de code.
 
-- Ouvrir le fichier `package.json` puis éditer le comme indiqué ci-dessous :
+  - Ouvrir le fichier `package.json` puis éditer le comme indiqué ci-dessous :
 
 	1. Ajouter la ligne `"http-server": "^0.12.3"` dans la partie `devDependencies`. 
 		Vous devriez avoir :
@@ -395,14 +394,14 @@ $ cd biiif
 		},
 		```
 
-- Ensuite, revenir dans le terminal puis entrer la commande suivante :
+  - Ensuite, revenir dans le terminal puis entrer la commande suivante :
 
 
 ```shell
 $ npm install
 ```
 
-- Ouvrir une nouvelle fenêtre ou un nouvel onglet de votre terminal, puis entrer :
+  - Ouvrir une nouvelle fenêtre ou un nouvel onglet de votre terminal, puis entrer :
 
 ```shell
 $ npm run serve
@@ -410,25 +409,25 @@ $ npm run serve
 
 Un mini serveur web devrait maintenant tourner à l'adresse http://127.0.0.1:8080.
 
-- Télécharger le dossier d'exemple à cette adresse : https://partages.campus-condorcet.fr/f/ac6c6c9a2b96423d8390/?dl=1
-	- dézipper l'archive dans votre répertoire `biiif`
-	- vous devriez avoir à la racine un nouveau répertoire nommé `collection` 
-- Revenir ensuite dans le premier terminal ouvert dans le dossier `biiif`, puis taper la commande :
+  - Télécharger le dossier d'exemple à cette adresse : https://partages.campus-condorcet.fr/f/ac6c6c9a2b96423d8390/?dl=1
+    - dézipper l'archive dans votre répertoire `biiif`
+	  - vous devriez avoir à la racine un nouveau répertoire nommé `collection` 
+  - Revenir ensuite dans le premier terminal ouvert dans le dossier `biiif`, puis taper la commande :
 
 ```shell
 $ node_modules/.bin/biiif collection -u http://localhost:8080/collection -g
 ```
 
-- Les fichiers d'exemple suivants devraient désormais être accessibles via votre mini serveur web :
-	- URL de la Collection IIIF : http://localhost:8080/collection/index.json
-	- URL du Manifest IIIF : http://localhost:8080/collection/gallica_ark_12148_bpt6k1526005v/index.json
+  - Les fichiers d'exemple suivants devraient désormais être accessibles via votre mini serveur web :
+	  - URL de la Collection IIIF : http://localhost:8080/collection/index.json
+	  - URL du Manifest IIIF : http://localhost:8080/collection/gallica_ark_12148_bpt6k1526005v/index.json
 
 ### Principes de fonctionnement de Biiif
 
 Observons ensemble la structure du répertoire `collection` et tâchons de comprendre la convention de nommage des répertoires et fichiers supportée par Biiif :
 
-- Lire les explications données ici : https://github.com/edsilv/biiif/#conventions
-- Voir un exemple d'arborescence : https://github.com/edsilv/biiif/#examples
+  - Lire les explications données ici : https://github.com/edsilv/biiif/#conventions
+  - Voir un exemple d'arborescence : https://github.com/edsilv/biiif/#examples
 
 Le répertoire `collection` représente une **Collection IIIF**, intitulée  ici"Ma collection d'objets IIIF" (cf. fichier `info.yml`).
 
@@ -452,14 +451,14 @@ $ node_modules/.bin/biiif collection -u http://localhost:8080/collection -g
 
 Le but de l'exercice consiste à ajouter un nouveau Manifest à notre Collection. Il s'agit donc de créer un nouveau répertoire à l'intérieur de notre dossier `collection` organisé sur le même modèle que l'exemple vu ci-dessus (`gallica_ark_12148_bpt6k1526005v`).
 
-- Télécharger l'archive suivante sur puis dézipper-la sur votre ordinateur : https://partages.campus-condorcet.fr/f/2a9fd9527db941b3b5a7/?dl=1
-	- le dossier `laocoon` contient 4 images JPG, chacune accompagnée d'un petit fichier texte avec quelques métadonnées basiques
-- Déplacer ce répertoire `laocoon` dans le répertoire `biiif/collection`
-- Puis l'organiser selon les conventions de Biiif vues ci-dessus, afin de pouvoir générer un nouveau Manifest pour nos 4 images du Laocoon.
-	- créer des fichiers `info.yml` pour renseigner quelques métadonnées de base, au niveau du Manifest et au niveau de chaque image
-- Une fois cela fait, tester la génération du Manifest avec la commande vue précémment (`node_modules/.bin/biiif collection -u http://localhost:8080/collection -g`)
-- Puis ouvrir la Collection ou le Manifest individuel dans votre Mirador local :
-	- URL de la Collection IIIF : http://localhost:8080/collection/index.json
+  - Télécharger l'archive suivante sur puis dézipper-la sur votre ordinateur : https://partages.campus-condorcet.fr/f/2a9fd9527db941b3b5a7/?dl=1
+	  - le dossier `laocoon` contient 4 images JPG, chacune accompagnée d'un petit fichier texte avec quelques métadonnées basiques
+  - Déplacer ce répertoire `laocoon` dans le répertoire `biiif/collection`
+  - Puis l'organiser selon les conventions de Biiif vues ci-dessus, afin de pouvoir générer un nouveau Manifest pour nos 4 images du Laocoon.
+	  - créer des fichiers `info.yml` pour renseigner quelques métadonnées de base, au niveau du Manifest et au niveau de chaque image
+  - Une fois cela fait, tester la génération du Manifest avec la commande vue précémment (`node_modules/.bin/biiif collection -u http://localhost:8080/collection -g`)
+  - Puis ouvrir la Collection ou le Manifest individuel dans votre Mirador local :
+	  - URL de la Collection IIIF : http://localhost:8080/collection/index.json
 
 
 ------
