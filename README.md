@@ -1,8 +1,8 @@
-# Cours IIIF - TD Master Humanités Numériques (CESR) - 07/12/2020
+# Cours IIIF - TD Master Humanités Numériques (CESR)
 
 Support du cours de travaux dirigés "Visualisation et fouille de données" dans le cadre du Master "Mediation Numérique de la Culture et des Patrimoines", École Supérieure en Intelligence des Patrimoines (ESI-Pat), Centre d'Études Supérieures de la Renaissance (CESR), Université de Tours.
 
-Conçu et animé par **Régis Robineau** (coordinateur technique de Biblissima), le 7 décembre 2020 (4h).	
+Conçu et animé par **Régis Robineau** (coordinateur technique de Biblissima).	
 
 ## Recommandations et pré-requis techniques
 
@@ -30,10 +30,10 @@ Dans l'API Image, une URL de requête d'image se conforme au modèle suivant :
 Les paramètres d'URL spécifiées par l'API Image sont :
 
 - [region](https://iiif.io/api/image/3.0/#41-region)
-- [size](https://iiif.io/api/image/2.1/#size)
-- [rotation](https://iiif.io/api/image/2.1/#rotation)
-- [quality](https://iiif.io/api/image/2.1/#quality)
-- [format](https://iiif.io/api/image/2.1/#format)
+- [size](https://iiif.io/api/image/3.0/#42-size)
+- [rotation](https://iiif.io/api/image/3.0/#43-rotation)
+- [quality](https://iiif.io/api/image/3.0/#quality)
+- [format](https://iiif.io/api/image/3.0/#45-format)
 
 #### Requête d'information sur l'image (`info.json`)
 
@@ -48,12 +48,12 @@ Une URL de requête d'information sur l'image se conforme au modèle suivant :
 Soit l'URL d'image IIIF suivante : 
 https://iiif.lib.ncsu.edu/iiif/mc00198-008-ff0051-000-001_0001/full/512,/0/default.jpg
 
-1. quelle serait l'URL du fichier information de cette image (`info.json`) ?
+1. quelle est l'URL du fichier information de cette image (`info.json`) ?
 2. quelle est la largeur et la hauteur de la version pleine taille de cette image (dimension maximale) ?
 3. Construire les URL IIIF correspondantes :
-	- image pivotée sur l'axe horizontal (miroir)
-	- image retournée à l'envers (180°)
-	- image d'une hauteur de 250 pixels
+	- image pleine taille pivotée sur l'axe horizontal (miroir)
+	- image pleine taille retournée à l'envers (180°)
+	- image redimensionnée avec une hauteur de 250 pixels
 	- image au format PNG et en niveau de gris
 
 ------
@@ -68,26 +68,26 @@ https://iiif.lib.ncsu.edu/iiif/mc00198-008-ff0051-000-001_0001/full/512,/0/defau
 
 #### Structure de base d'un Manifeste
 
-*Manifest*
+```
+Manifest
 
-​	|__  *Sequence*
+​	|__  Sequence
 
-​		|__  *Canvas*
+​		|__  Canvas
 
-​			|__  *Content*
+​			|__  Content
+```
 
 #### Structure complète
 
-- API Présentation v2 :
-![https://iiif.io/api/presentation/2.1/img/objects-all.png](https://iiif.io/api/presentation/2.1/img/objects-all.png)
-- API Présentation v3 : https://iiif.io/api/presentation/3.0/img/data-model.png
+- API Présentation v2 : https://iiif.io/api/presentation/2.1/img/objects-all.png
+- API Présentation v3 : ![https://iiif.io/api/assets/images/data-model.png](https://iiif.io/api/assets/images/data-model.png)
 
 ### Dissection d'un Manifeste
 
 Inspectons ensemble la structure et les différentes composantes d'un Manifeste IIIF :
 
-- Ouvrir le lien suivant dans votre navigateur (Firefox ou Chrome avec l'extension JSONView activée) :
-	https://iiif.bodleian.ox.ac.uk/iiif/manifest/390fd0e8-9eae-475d-9564-ed916ab9035c.json
+- Ouvrir le lien suivant dans votre navigateur (Firefox ou Chrome avec l'extension JSONView activée) : https://purl.stanford.edu/hg676jb4964/iiif3/manifest
 
 	
 
@@ -108,6 +108,8 @@ Vous trouverez ci-dessous une liste non-exhaustive de sites qui proposent des ob
 - Vous pouvez lancer les recherches qui vous intéressent sur plusieurs de ces sites, ou pour aller plus vite vous pouvez aussi cliquer sur les liens donnés en exemple dans la liste ci-dessous.
 
 ### Liste d'entrepôts IIIF
+
+Pour une liste plus riche, voir https://iiif.io/guides/finding_resources/
 
 #### Agrégateurs, portails, banques d'images
 
@@ -242,11 +244,11 @@ Un autre exemple d'exploitation dans une interface dédiée des annotations IIIF
 
 ### Étapes de l'exercice
 
-1. **Ouvrir l'interface d'administration de SAS :** https://data-dev.biblissima.fr/simpleAnnotationStore/index.html
+1. **Ouvrir l'interface d'administration de SAS :** https://demos-dev.biblissima.fr/simpleAnnotationStore/index.html
 
 	```
 	- URL Manifeste source : https://wd-image-positions.toolforge.org/iiif/Q28796135/P18/manifest.json
-	- IIIF Search API endpoint : https://data-dev.biblissima.fr/simpleAnnotationStore/search-api/P18/search
+	- IIIF Search API endpoint : https://demos-dev.biblissima.fr/simpleAnnotationStore/search-api/P18/search
 	- Manifeste dérivé : https://api.npoint.io/4b814fdc63a68e61da04
 	```
 
@@ -270,13 +272,13 @@ Un autre exemple d'exploitation dans une interface dédiée des annotations IIIF
 
 5. **Visualiser dans Mirador les annotations** créées par les autres participants :
 
-	- Retourner à la page `View annotations` > `Picture Gallery with Views of Modern Rome` : https://data-dev.biblissima.fr/simpleAnnotationStore/manifest.xhtml?manifest=P18
-	- Ouvrir Mirador en cliquant sur `Annotate` : https://data-dev.biblissima.fr/simpleAnnotationStore/index.html?iiif-content=https://wd-image-positions.toolforge.org/iiif/Q28796135/P18/manifest.json.
+	- Retourner à la page `View annotations` > `Picture Gallery with Views of Modern Rome` : https://demos-dev.biblissima.fr/simpleAnnotationStore/manifest.xhtml?manifest=P18
+	- Ouvrir Mirador en cliquant sur `Annotate` : https://demos-dev.biblissima.fr/simpleAnnotationStore/index.html?iiif-content=https://wd-image-positions.toolforge.org/iiif/Q28796135/P18/manifest.json.
 	- Afficher toutes les annotations créées (icône en forme de bulles).
 
 6. **Activer et tester la recherche sur ces annotations** (API *Content Search* de IIIF) :
 
-	- Retourner à la page `View annotations` > `Picture Gallery with Views of Modern Rome` : https://data-dev.biblissima.fr/simpleAnnotationStore/manifest.xhtml?manifest=P18
+	- Retourner à la page `View annotations` > `Picture Gallery with Views of Modern Rome` : https://demos-dev.biblissima.fr/simpleAnnotationStore/manifest.xhtml?manifest=P18
 	- Enregistrer le Manifeste IIIF source sur votre ordinateur (clic-droit "Copier l'adresse du lien") : https://wd-image-positions.toolforge.org/iiif/Q28796135/P18/manifest.json
 	- Ouvrir le fichier dans votre éditeur favori
 	- Sur la page `Picture Gallery with Views of Modern Rome` de SAS, copier le bloc dans la section `IIIF Search Service` (dupliqué ci-dessous) :
@@ -284,7 +286,7 @@ Un autre exemple d'exploitation dans une interface dédiée des annotations IIIF
 	```
 	"service": {
 	    "profile": "http://iiif.io/api/search/0/search",
-	    "@id": "https://data-dev.biblissima.fr/simpleAnnotationStore/search-api/P18/search",
+	    "@id": "https://demos-dev.biblissima.fr/simpleAnnotationStore/search-api/P18/search",
 	    "@context": "http://iiif.io/api/search/0/context.json"
 	},
 	```
@@ -299,7 +301,7 @@ Un autre exemple d'exploitation dans une interface dédiée des annotations IIIF
 
 	- Cette URL pointe désormais vers notre Manifest modifié, que l'on va pouvoir tester sur divers outils de visualisation :
 
-		- Mirador 2 : https://data-dev.biblissima.fr/simpleAnnotationStore/
+		- Mirador 2 : https://demos-dev.biblissima.fr/simpleAnnotationStore/
 		- Mirador 3 : [https://iiif.biblissima.fr/mirador3/?iiif-content=](https://iiif.biblissima.fr/mirador3/?iiif-content=){URL_Manifeste}
 		- Universal Viewer : https://uv-v3.netlify.app/#?c=&m=&s=&cv=&manifest={URL_Manifeste}
 
